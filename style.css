@@ -1,0 +1,126 @@
+*{
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(214, 17%, 51%);
+    display: grid;
+}
+
+.container{
+    display: grid;
+    background-color: white;
+    width: 650px;
+    height: 280px;
+    place-self: center;
+    margin-top: 15vh;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 10px;
+}
+
+.containerR{
+    padding: 20px;
+}
+
+.bottomContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 15px;
+}
+
+h2{
+    color: hsl(217, 19%, 35%);
+}
+
+.name{
+    color: hsl(217, 19%, 35%);
+    font-size: 15px;
+}
+
+.imgM{
+    border-radius: 25px;
+    padding-left: 20px;
+}
+
+.article-preview-share-arrow-container {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.share-arrow {
+    width: 1.6rem;
+    height: 1.5rem;
+}
+
+.share-button {
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    width: 24.8rem;
+    height: 5.5rem;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    top: -220%;
+    left: -310%;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.share-button::after {
+  content: " ";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -.5rem;
+  border-width: 6px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.share-button p {
+    color: hsl(214, 17%, 51%);
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    margin: 0 .5rem;
+}
+
+.share-button img {
+    color: hsl(210, 46%, 95%);
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    margin: 0 .5rem;
+}
+
+.active {
+    display: flex;
+    animation: fadeIn .3s ease forwards;
+}
+
+.inactive {
+    display: none;
+    
+}
+
+.colored {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.coloredArrow {
+    filter: invert(100%) sepia(12%) saturate(100%) hue-rotate(191deg) brightness(200%) contrast(114%);
+}
+
+footer{
+    padding: 15px;
+    align-self: end;
+}
